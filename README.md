@@ -1,28 +1,28 @@
-# Biblioteca - CRUD con DAO y SQLite
+Biblioteca - CRUD con DAO y SQLite
 
 * Nombre: Josue Alejandro Trochez Mendez
 * Numero de cuenta: 202330010407
 
-## Descripcion
+Descripcion
 
 Proyecto Maven en Java que administra autores y libros (un autor tiene muchos libros).
 Usa interfaces DAO, JDBC con SQLite y una separacion por capas: modelo, dao, servicio y presentacion (menu de consola).
 
-## Requisitos
+Requisitos
 
 * JDK 11 o superior
 * Maven (incluido en NetBeans)
 * Conexion a internet la primera vez, para que Maven descargue el driver `sqlite-jdbc`
 
-## Como ejecutar
+Como ejecutar
 
 1. Abrir el proyecto en NetBeans (File > Open Project).
 2. Clic derecho sobre el proyecto > Clean and Build.
 3. Ejecutar con Run Project (clase principal: `hn.uth.poo.biblioteca.app.Main`).
 4. Usar el menu que aparece en la ventana Output.
 
-La base de datos `biblioteca.db` se crea sola en la carpeta del proyecto al ejecutar.
-El script `biblioteca.sql` tiene las mismas tablas por si se quieren crear a mano.
+La base de datos biblioteca.db se crea sola en la carpeta del proyecto al ejecutar.
+El script biblioteca.sql tiene las mismas tablas por si se quieren crear a mano.
 
 Por consola con Maven:
 
@@ -50,9 +50,9 @@ mvn compile exec:java -Dexec.mainClass=hn.uth.poo.biblioteca.app.Main
 
 ## Evidencias
 
-Las capturas estan en la carpeta `evidencias`.
+Las capturas estan en la carpeta "evidencias".
 
-### Autores
+Autores
 
 * Crear:
 * Listar:
@@ -60,7 +60,7 @@ Las capturas estan en la carpeta `evidencias`.
 * Actualizar:
 * Eliminar:
 
-### Libros
+Libros
 
 * Crear:
 * Listar:
@@ -69,7 +69,7 @@ Las capturas estan en la carpeta `evidencias`.
 * Eliminar:
 * Listar libros de un autor:
 
-### Reglas de negocio rechazando datos
+Reglas de negocio rechazando datos
 
 * ISBN repetido:
 * Eliminar un autor con libros:
